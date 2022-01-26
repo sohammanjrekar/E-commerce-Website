@@ -10,26 +10,85 @@
 {% block body %}
 </div>
 </div>
-<div class="row">
-    <div class="col-2">
-      <h1>
-        Give your Workout<br />
-        a new Style!
-      </h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
-        Voluptas rerum maiores animi officiis
-      </p>
-      <a href="" class="btn">Explore Now &#8594;</a>
+
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" >
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="row"style="margin-left:40px">
+        <div class="col-2">
+          <h1>
+            Give your Workout<br />
+            a new Style!
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+            Voluptas rerum maiores animi officiis
+          </p>
+          <a href="" class="btn">Explore Now &#8594;</a>
+        </div>
+        <div class="col-2"style="margin-right:0px">
+          <img src="{% static 'shop/images/image1.jpg' %}" alt="" />
+        </div>
+      </div>
     </div>
-    <div class="col-2">
-      <img src="{% static 'shop/images/image1.png' %}" alt="" />
+
+    <div class="carousel-item">
+      <div class="row" style="margin-left:40px">
+        <div class="col-2">
+          <h1>
+            Give your Workout<br />
+            a new Style!
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+            Voluptas rerum maiores animi officiis
+          </p>
+          <a href="" class="btn">Explore Now &#8594;</a>
+        </div>
+        <div class="col-2">
+          <img src="{% static 'shop/images/image2.jpg' %}" alt="" />
+        </div>
+      </div>
+
+
+    </div>
+    <div class="carousel-item">
+      <div class="row" style="margin-left:40px">
+        <div class="col-2">
+          <h1>
+            Give your Workout<br />
+            a new Style!
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+            Voluptas rerum maiores animi officiis
+          </p>
+          <a href="" class="btn">Explore Now &#8594;</a>
+        </div>
+        <div class="col-2">
+          <img src="{% static 'shop/images/image3.jpg' %}" alt="" />
+        </div>
+      </div>
     </div>
   </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+
 </div>
 </div>
+
 <!----- Featurd Categories--------->
-<div class="categories">
+<!-- <div class="categories">
 <div class="small-container">
   <div class="row">
     <div class="col-3">
@@ -43,7 +102,8 @@
     </div>
   </div>
 </div>
-</div>
+</div> -->
+
 <!----- Featurd Products--------->
 <div class="small-container">
 <h2 class="title">Featured Products</h2>
@@ -209,11 +269,13 @@
 
 <!-------- Offer --------->
 <div class="offer">
+  
 <div class="small-container">
   <div class="row">
     <div class="col-2">
       <img src="{% static 'shop/images/exclusive.png' %}" class="offer-img" alt="" />
     </div>
+
     <div class="col-2">
       <p>Exclusively available on RedStore</p>
       <h1>Smart Band 4</h1>
@@ -222,12 +284,21 @@
       </small>
       <a href="" class="btn">Buy Now &#8594;</a>
     </div>
+
   </div>
 </div>
 </div>
 
+
+
+
+
+
+
+
+
 <!------ Testimonial  ------>
-<div class="testimonial">
+<!-- <div class="testimonial">
 <div class="small-container">
   <div class="row">
     <div class="col-3">
@@ -264,7 +335,7 @@
         <i class="fa fa-star"></i>
         <i class="fa fa-star-o"></i>
       </div>
-      <img src="{% static 'shop/images/user-2.png' %}"" alt="" />
+      <img src="{% static 'shop/images/user-1.png' %}"" alt="" />
       <h3>Michel Joe</h3>
     </div>
 
@@ -283,36 +354,36 @@
         <i class="fa fa-star"></i>
         <i class="fa fa-star-o"></i>
       </div>
-      <img src="{% static 'shop/images/user-3.png' %}" alt="" />
+      <img src="images/user-3.png" alt="" />
       <h3>Kaily Jenner</h3>
     </div>
   </div>
 </div>
-</div>
+</div> -->
 
 <!-- Brands -->
-
+<!-- 
 <div class="brands">
 <div class="small-container">
   <div class="row">
     <div class="col-5">
-      <img src="{% static 'shop/images/logo-godrej.png' %}" alt="" />
+      <img src="images/logo-godrej.png" alt="" />
     </div>
     <div class="col-5">
-      <img src="{% static 'shop/images/logo-oppo.png' %}"  alt="" />
+      <img src="images/logo-oppo.png" alt="" />
     </div>
     <div class="col-5">
-      <img src="{% static 'shop/images/logo-paypal.png' %}"  alt="" />
+      <img src="images/logo-paypal.png" alt="" />
     </div>
     <div class="col-5">
-      <img src="{% static 'shop/images/logo-godrej.png' %}"  alt="" />
+      <img src="images/logo-philips.png" alt="" />
     </div>
     <div class="col-5">
-      <img src="{% static 'shop/images/logo-coca-cola.png' %}" alt="" />
+      <img src="images/logo-coca-cola.png" alt="" />
     </div>
   </div>
 </div>
-</div>
+</div> -->
 {% endblock  %}
 
 
