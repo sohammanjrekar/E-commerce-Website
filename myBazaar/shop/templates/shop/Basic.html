@@ -1,10 +1,10 @@
-{% block head %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>myBazaar</title>
+  <title>{% block title %} {% endblock %}</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://res.cloudinary.com/mybazaar/raw/upload/v1643199302/mybazaar/style.min_frccol.css">
   <link
@@ -15,14 +15,13 @@
     src="https://cdn.jsdelivr.net/gh/sohammanjrekar/E-commerce-Website/myBazaar/shop/static/shop/js/rellax.min.js"></script>
 </head>
 <body>
-  {% endblock %}
- 
-      {% block navbar %}
+{% block head %} {% endblock  %}
       <div class="navbar">
         <div class="logo">
           <a href="index.html">
-            <img src="images/logo.png" alt="" width="125px" /></a>
+            <img src="{% static 'shop/images/logo.png' %}" alt="" width="125px" /></a>
         </div>
+
         <nav>
           <ul id="MenuItems">
             <li><a href="index.html">Home</a></li>
@@ -32,12 +31,12 @@
             <li><a href="account.html">Account</a></li>
           </ul>
         </nav>
-        <a href="cart.html"><img src="images/cart.png" alt="" width="30px" height="30px" /></a>
-        <img src="images/menu.png" alt="" class="menu-icon" onclick="menutoggle()" />
+        <a href="cart.html"><img src="{% static 'shop/images/cart.png' %}" alt="" width="30px" height="30px" /></a>
+        <img src="{% static 'shop/images/cart.png' %}" alt="" class="menu-icon" onclick="menutoggle()" />
       </div>
-      {% endblock %}
+{% block body %}
 
-{% block footer %}
+{% endblock %}
   <!-- Footer -->
   <div class="footer">
     <div class="container">
@@ -94,4 +93,3 @@
   </script>
 </body>
 </html>
-{% endblock %}

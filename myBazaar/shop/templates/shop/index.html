@@ -1,10 +1,13 @@
-{% extends "basic.html" %}
+{% extends 'shop/basic.html' %}
+{% load static %}
+{% block title%}Home{% endblock %}
+
 {% block head %}
-{% endblock %}
 <div class="header">
 <div class="container">
-{% block navbar %}
-{% endblock %}
+{% endblock  %}
+
+{% block body %}
 </div>
 </div>
 <div class="row">
@@ -20,7 +23,7 @@
       <a href="" class="btn">Explore Now &#8594;</a>
     </div>
     <div class="col-2">
-      <img src="images/image1.png" alt="" />
+      <img src="{% static 'shop/images/image1.png' %}" alt="" />
     </div>
   </div>
 </div>
@@ -30,13 +33,13 @@
 <div class="small-container">
   <div class="row">
     <div class="col-3">
-      <img src="images/category-1.jpg" alt="" />
+      <img src="{% static 'shop/images/category-1.jpg' %}" alt="" />
     </div>
     <div class="col-3">
-      <img src="images/category-2.jpg" alt="" />
+      <img src="{% static 'shop/images/category-2.jpg' %}" alt="" />
     </div>
     <div class="col-3">
-      <img src="images/category-3.jpg" alt="" />
+      <img src="{% static 'shop/images/category-3.jpg' %}" alt="" />
     </div>
   </div>
 </div>
@@ -47,7 +50,7 @@
 <div class="row">
   <div class="col-4">
     <a href="product-details.html">
-      <img src="images/product-1.jpg" alt="" /></a>
+      <img src="{% static 'shop/images/product-1.jpg' %}" alt="" /></a>
     <h4>Red Printed T-shirt</h4>
     <div class="rating">
       <i class="fa fa-star"></i>
@@ -60,7 +63,7 @@
   </div>
 
   <div class="col-4">
-    <img src="images/product-2.jpg" alt="" />
+    <img src="{% static 'shop/images/product-2.jpg' %}" alt="" />
     <h4>Red Printed T-shirt</h4>
     <div class="rating">
       <i class="fa fa-star"></i>
@@ -73,7 +76,7 @@
   </div>
 
   <div class="col-4">
-    <img src="images/product-3.jpg" alt="" />
+    <img src="{% static 'shop/images/product-3.jpg' %}" alt="" />
     <h4>Red Printed T-shirt</h4>
     <div class="rating">
       <i class="fa fa-star"></i>
@@ -85,7 +88,7 @@
     <p>$50.00</p>
   </div>
   <div class="col-4">
-    <img src="images/product-4.jpg" alt="" />
+    <img src="{% static 'shop/images/product-4.jpg' %}" alt="" />
     <h4>Red Printed T-shirt</h4>
     <div class="rating">
       <i class="fa fa-star"></i>
@@ -100,7 +103,7 @@
 <h2 class="title">Latest Products</h2>
 <div class="row">
   <div class="col-4">
-    <img src="images/product-5.jpg" alt="" />
+    <img src="{% static 'shop/images/product-5.jpg' %}" alt="" />
     <h4>Red Printed T-shirt</h4>
     <div class="rating">
       <i class="fa fa-star"></i>
@@ -113,7 +116,7 @@
   </div>
 
   <div class="col-4">
-    <img src="images/product-6.jpg" alt="" />
+    <img src="{% static 'shop/images/product-6.jpg' %}" alt="" />
     <h4>Red Printed T-shirt</h4>
     <div class="rating">
       <i class="fa fa-star"></i>
@@ -126,7 +129,7 @@
   </div>
 
   <div class="col-4">
-    <img src="images/product-7.jpg" alt="" />
+    <img src="{% static 'shop/images/product-7.jpg' %}" alt="" />
     <h4>Red Printed T-shirt</h4>
     <div class="rating">
       <i class="fa fa-star"></i>
@@ -138,7 +141,7 @@
     <p>$50.00</p>
   </div>
   <div class="col-4">
-    <img src="images/product-8.jpg" alt="" />
+    <img src="{% static 'shop/images/product-8.jpg' %}" alt="" />
     <h4>Red Printed T-shirt</h4>
     <div class="rating">
       <i class="fa fa-star"></i>
@@ -152,7 +155,7 @@
 </div>
 <div class="row">
   <div class="col-4">
-    <img src="images/product-9.jpg" alt="" />
+    <img src="{% static 'shop/images/product-9.jpg' %}" alt="" />
     <h4>Red Printed T-shirt</h4>
     <div class="rating">
       <i class="fa fa-star"></i>
@@ -165,7 +168,7 @@
   </div>
 
   <div class="col-4">
-    <img src="images/product-10.jpg" alt="" />
+    <img src="{% static 'shop/images/product-10.jpg' %}" alt="" />
     <h4>Red Printed T-shirt</h4>
     <div class="rating">
       <i class="fa fa-star"></i>
@@ -178,7 +181,7 @@
   </div>
 
   <div class="col-4">
-    <img src="images/product-11.jpg" alt="" />
+    <img src="{% static 'shop/images/product-11.jpg' %}" alt="" />
     <h4>Red Printed T-shirt</h4>
     <div class="rating">
       <i class="fa fa-star"></i>
@@ -190,7 +193,7 @@
     <p>$50.00</p>
   </div>
   <div class="col-4">
-    <img src="images/product-12.jpg" alt="" />
+    <img src="{% static 'shop/images/product-12.jpg' %}" alt="" />
     <h4>Red Printed T-shirt</h4>
     <div class="rating">
       <i class="fa fa-star"></i>
@@ -209,7 +212,7 @@
 <div class="small-container">
   <div class="row">
     <div class="col-2">
-      <img src="images/exclusive.png" class="offer-img" alt="" />
+      <img src="{% static 'shop/images/exclusive.png' %}" class="offer-img" alt="" />
     </div>
     <div class="col-2">
       <p>Exclusively available on RedStore</p>
@@ -242,7 +245,7 @@
         <i class="fa fa-star"></i>
         <i class="fa fa-star-o"></i>
       </div>
-      <img src="images/user-1.png" alt="" />
+      <img src="{% static 'shop/images/user-1.png' %}" alt="" />
       <h3>Sean Parker</h3>
     </div>
 
@@ -261,7 +264,7 @@
         <i class="fa fa-star"></i>
         <i class="fa fa-star-o"></i>
       </div>
-      <img src="images/user-2.png" alt="" />
+      <img src="{% static 'shop/images/user-2.png' %}"" alt="" />
       <h3>Michel Joe</h3>
     </div>
 
@@ -280,7 +283,7 @@
         <i class="fa fa-star"></i>
         <i class="fa fa-star-o"></i>
       </div>
-      <img src="images/user-3.png" alt="" />
+      <img src="{% static 'shop/images/user-3.png' %}" alt="" />
       <h3>Kaily Jenner</h3>
     </div>
   </div>
@@ -293,25 +296,25 @@
 <div class="small-container">
   <div class="row">
     <div class="col-5">
-      <img src="images/logo-godrej.png" alt="" />
+      <img src="{% static 'shop/images/logo-godrej.png' %}" alt="" />
     </div>
     <div class="col-5">
-      <img src="images/logo-oppo.png" alt="" />
+      <img src="{% static 'shop/images/logo-oppo.png' %}"  alt="" />
     </div>
     <div class="col-5">
-      <img src="images/logo-paypal.png" alt="" />
+      <img src="{% static 'shop/images/logo-paypal.png' %}"  alt="" />
     </div>
     <div class="col-5">
-      <img src="images/logo-philips.png" alt="" />
+      <img src="{% static 'shop/images/logo-godrej.png' %}"  alt="" />
     </div>
     <div class="col-5">
-      <img src="images/logo-coca-cola.png" alt="" />
+      <img src="{% static 'shop/images/logo-coca-cola.png' %}" alt="" />
     </div>
   </div>
 </div>
 </div>
-{% block footer %}
-{% endblock %}
+{% endblock  %}
+
 
 
 
